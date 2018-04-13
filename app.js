@@ -1,3 +1,6 @@
+// define userInput via button onclick
+
+
 // Get user choice
 function getUserChoice(userInput) {
   userInput = userInput.toLowerCase();
