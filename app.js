@@ -52,8 +52,9 @@ function determineWinner(userChoice, computerChoice) {
     }
   }
 }
+
 // Play game
-function playGame(){
+function clickRock(){
   var userChoice = getUserChoice('rock');
   var computerChoice = getComputerChoice();
   console.log('You chose ' + userChoice);
@@ -61,4 +62,22 @@ function playGame(){
   console.log(determineWinner(userChoice, computerChoice));
 }
 
-  playGame();
+function clickPaper(){
+  var userChoice = getUserChoice('paper');
+  var computerChoice = getComputerChoice();
+  console.log('You chose ' + userChoice);
+  console.log('The computer chose ' + computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
+}
+
+function clickScissors(){
+  var userChoice = getUserChoice('scissors');
+  var computerChoice = getComputerChoice();
+  console.log('You chose ' + userChoice);
+  console.log('The computer chose ' + computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
+}
+//Tally of wins and losses
+function getTally() {
+
+}
