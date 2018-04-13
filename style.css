@@ -5,12 +5,13 @@ body {
 
 h1 {
   color: blue;
+  text-shadow: 3px 5px rgba(150, 150, 150, 0.5);
 }
 
-p {
+.challenge {
   text-transform: capitalize;
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: solid;
 }
 
 button {
@@ -30,5 +31,14 @@ button:hover {
 }
 
 button:active {
-  top: 3px;
+  top: 4px;
+}
+
+#refresh {
+  background-color: rgba(250, 50, 50, 0.5);
+  width: auto;
+  height: auto;
+}
+#refresh:hover {
+  background-color: rgba(250, 50, 50, 0.8);
 }

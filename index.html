@@ -8,18 +8,20 @@
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
-    <p>
-      Can you beat the Computer?
+    <p class="challenge">
+      Can you beat the computer?
     </p>
 
     <button type="button" onclick="clickRock()" id="rock">rock</button>
     <button type="button" onclick="clickPaper()" id="paper">paper</button>
     <button type="button" onclick="clickScissors()" id="scissors">scissors</button>
 
-
+    <h2>Outcome: <span id="outcome"></span></h2>
     <div class="container">
-      <h3>Wins / Losses</h3>
-      <p></p>
+      <h3>Tally</h3>
+      <p>Wins: <span id="wins"></span> Losses: <span id="losses"></span></p>
     </div>
+
+    <button id="refresh" type="button" onclick="window.location.reload()">Start Over</button>
   </body>
 </html>

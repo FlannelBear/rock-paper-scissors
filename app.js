@@ -27,26 +27,45 @@ function getComputerChoice() {
 // Determine Winner
 function determineWinner(userChoice, computerChoice) {
   if(userChoice === computerChoice){
+     document.getElementById("outcome").innerHTML = 'Tie!';
     return 'Tie!';
   }
 
   if(userChoice !== computerChoice){
     if(userChoice === 'rock'){
       if(computerChoice === 'scissors'){
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+         document.getElementById("outcome").innerHTML = 'Winner!';
         return 'You win!';
       } else {
+        losses++;
+        document.getElementById("losses").innerHTML = losses;
+         document.getElementById("outcome").innerHTML = 'Loser!';
         return 'Computer wins.!';
       }
     } else if(userChoice === 'paper'){
       if(computerChoice === 'rock'){
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+         document.getElementById("outcome").innerHTML = 'Winner!';
         return 'You win!';
       } else {
+        losses++;
+        document.getElementById("losses").innerHTML = losses;
+         document.getElementById("outcome").innerHTML = 'Loser!';
         return 'Computer wins.!';
       }
     } else if(userChoice === 'scissors'){
       if(computerChoice === 'paper'){
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+         document.getElementById("outcome").innerHTML = 'Winner!';
         return 'You win!';
       } else {
+        losses++;
+        document.getElementById("losses").innerHTML = losses;
+         document.getElementById("outcome").innerHTML = 'Loser!';
         return 'Computer wins.';
       }
     }
@@ -78,6 +97,5 @@ function clickScissors(){
   console.log(determineWinner(userChoice, computerChoice));
 }
 //Tally of wins and losses
-function getTally() {
-
-}
+var wins = 0;
+var losses = 0;
